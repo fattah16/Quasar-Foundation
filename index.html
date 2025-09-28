@@ -4,153 +4,116 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quasar Foundation</title>
-  <link rel="stylesheet" href="./style.css">
+  <link href="./style.css" rel="stylesheet">
 </head>
-<body>
-  <div class="nav-bar">
-    <div class="nav-logo">
-      <img src="" alt="">
+<body class="bg-purple-400 text-white">
+  <div class="flex justify-between items-center h-16 px-6 bg-white/60 text-white">
+    <div class="flex items-center gap-2">
+      <img src="" alt="logo" class="h-12 w-12 hover:scale-110 transition-transform duration-300">
     </div>
-    <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
-    <div class="nav-links">
-      <a href="#">About</a>
-      <a href="#">Mission</a>
-      <a href="#">Donate</a>
-      <a href="#">Contact</a>
+    <button class="menu-toggle text-2xl lg:hidden">&#9776;</button>
+    <div class="hidden lg:flex justify-center gap-6 text-purple-900 font-semibold">
+      <a href="#" class="hover:text-white font-medium">About</a>
+      <a href="#" class="hover:text-white font-medium">Mission</a>
+      <a href="#" class="hover:text-white font-medium">Donate</a>
+      <a href="#" class="hover:text-white font-medium">Contact</a>
     </div>
-    <button>Get involved</button>
+    <button class="bg-white text-purple-900 px-4 py-1 rounded-lg hover:bg-purple-800 hover:text-white font-bold">
+      Get involved
+    </button>
   </div>
-  <script>
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navLinks = document.querySelector('.nav-links');
-    menuToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    });
-  </script>
-
-  <section class="hero">
-    <h1>Outreach programme REACHING LIVES. <br> RESTORING HOPE. <br>TRANSFORMING <span>Communities</span></h1>
-    <p>Join Quasar in making a difference. Together, we build stronger communities, provide essential support, and create lasting positive change.</p>
-    <div class="one">
-      <button>Get Involved</button>
-    <button>volunter</button>
+  <section class="flex flex-col justify-center items-center text-center py-12">
+    <h1 class="text-4xl font-bold px-4">
+      Outreach programme REACHING LIVES. <br>
+      RESTORING HOPE. <br>
+      TRANSFORMING <span class="text-purple-700">Communities</span>
+    </h1>
+    <p class="text-lg max-w-2xl px-4 py-4">
+      Join Quasar in making a difference. Together, we build stronger communities, provide essential support, and create lasting positive change.
+    </p>
+    <div class="flex gap-4">
+      <button class="bg-white/70 text-white px-6 py-2 rounded-lg hover:bg-white hover:text-black font-bold">Get Involved</button>
+      <button class="bg-white/70 text-white px-6 py-2 rounded-lg hover:bg-white hover:text-black font-bold">Volunteer</button>
     </div>
   </section>
-  <section class="about">
-    <h1>About Quasar</h1>
-    <p>Founded with a vision to create meaningful change, Quasar is a community-driven outreach program dedicated to addressing the most pressing needs in our neighborhoods. We believe that when communities come together, extraordinary things happen. <br>
-      <br>
-      <br>
-      <br>
-
-Our team of passionate volunteers and partners work tirelessly to provide essential services, educational support, and resources to those who need them most. Every initiative we undertake is designed to foster long-term positive impact and sustainable community growth.</p>
-<div class="about-card">
-  <div class="card">
-    <h1>500+</h1>
-    <p>Lives Changed</p>
-  </div>
-  <div class="card">
-    <h1>50+</h1>
-    <p>Active Volunteers</p>
-  </div>
-  <div class="card">
-    <h1>30+</h1>
-    <p>Community Projects</p>
-  </div>
-  <div class="card">
-    <h1>10+</h1>
-    <p>Years of Service</p>
-  </div>
-</div>
-<div class="card">
-  <img src="" alt="">
-</div>
-  </section>
-  <section class="mission">
-    <h1>Our Mission</h1>
-    <p>To create sustainable positive change in communities by connecting resources with needs, empowering individuals, and fostering collaborative solutions to social challenges.
-
-People working together for charity
-</p>
-<div class="mis-card">
-  <div class="img-card">
-    <img src="" alt="">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi autem veritatis eum ex esse tenetur magnam inventore nihil earum minima laudantium deleniti delectus voluptatibus possimus quia quos, cupiditate qui ut?</p>
-  </div>
-  <div class="mission-card">
-  <div class="card">
-    <img src="" alt="">
-    <h2>Community Engagement</h2>
-    <p>We actively involve community members in identifying needs and developing solutions, ensuring that our initiatives are relevant and impactful.</p>
-  </div>
-  
-  <div class="card">
-    <img src="" alt="">
-    <h2>Health & Well-being</h2>
-    <p>We promote health and well-being through access to medical services, mental health support, and wellness programs.</p>
-  </div>
-  <div class="card">
-    <img src="" alt="">
-    <h2>Sustainability Initiatives</h2>
-    <p>We implement environmentally sustainable practices in our projects to ensure long-term benefits for communities and the planet.</p>
-  </div>
-</div>
-</div>
-
-  </section>
-  <section class="support">
-    <h1>Support Our Mission
-</h1>
-<p>Your contribution helps us reach more families, provide essential resources, and create lasting positive change in communities that need it most.
-
-</p>
-<div class="box">
-  <img src="" alt="">
-  <h2>Your Impact</h2>
-  <p><span>₦500</span>
-Provides a day's meal for a family</p>
-<p><span>₦5000</span>
-Supplies educational materials for a child</p>
-<p><span>₦1000</span>
-Supports study materials assistance for a Student</p>
-<p><span>₦20000</span>
-Funds Vocational training for an Orphan</p>
-</div>
-
-  </section>
-  <footer class="footer
-  ">
-    <div class="intro">
-       <div class="nav-logo">
-      <img src="" alt="">
+  <section class="flex flex-col items-center my-12 px-6 text-lg">
+    <h1 class="text-4xl mb-4">About Quasar</h1>
+    <p class="text-center max-w-4xl mb-8">
+      Founded with a vision to create meaningful change, Quasar is a community-driven outreach program dedicated to addressing the most pressing needs in our neighborhoods...
+    </p>
+    <div class="grid md:grid-cols-4 gap-6">
+      <div class="bg-white/70 rounded-lg shadow-md p-6 text-center hover:bg-purple-700 hover:text-white">
+        <h1 class="text-3xl font-bold">500+</h1>
+        <p>Lives Changed</p>
+      </div>
+      <div class="bg-white/70 rounded-lg shadow-md p-6 text-center hover:bg-purple-700 hover:text-white">
+        <h1 class="text-3xl font-bold">50+</h1>
+        <p>Active Volunteers</p>
+      </div>
+      <div class="bg-white/70 rounded-lg shadow-md p-6 text-center hover:bg-purple-700 hover:text-white">
+        <h1 class="text-3xl font-bold">30+</h1>
+        <p>Community Projects</p>
+      </div>
+      <div class="bg-white/70 rounded-lg shadow-md p-6 text-center hover:bg-purple-700 hover:text-white">
+        <h1 class="text-3xl font-bold">10+</h1>
+        <p>Years of Service</p>
+      </div>
     </div>
-      <h1>Quasar Foundation</h1>
-      <p>Empowering communities through outreach, one connection at a time. Together, we create lasting positive change.</p>
-      <div class="social-icons">
-        <a href="#"><img src="" alt=""></a>
-        <a href="#"><img src="" alt=""></a>
+  </section>
+  <section class="flex flex-col items-center text-center px-6 py-12">
+    <h1 class="text-4xl mb-4">Our Mission</h1>
+    <p class="max-w-3xl mb-6">
+      To create sustainable positive change in communities by connecting resources with needs, empowering individuals...
+    </p>
+    <div class="grid lg:grid-cols-2 gap-6">
+      <div class="bg-white/70 rounded-lg shadow-md p-6">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+      </div>
+      <div class="flex flex-col gap-4">
+        <div class="bg-white/70 rounded-lg shadow-md p-6 hover:bg-purple-700 hover:text-white">
+          <h2 class="text-xl font-semibold">Community Engagement</h2>
+          <p>We actively involve community members...</p>
+        </div>
+        <div class="bg-white/70 rounded-lg shadow-md p-6 hover:bg-purple-700 hover:text-white">
+          <h2 class="text-xl font-semibold">Health & Well-being</h2>
+          <p>We promote health and well-being...</p>
+        </div>
+        <div class="bg-white/70 rounded-lg shadow-md p-6 hover:bg-purple-700 hover:text-white">
+          <h2 class="text-xl font-semibold">Sustainability Initiatives</h2>
+          <p>We implement environmentally sustainable practices...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="grid md:grid-cols-3 gap-12 bg-black text-white p-12">
+    <div class="flex flex-col gap-4 items-center md:items-start text-center md:text-left">
+      <img src="" alt="logo" class="h-12 w-12 hover:scale-110 transition-transform">
+      <h1 class="text-2xl font-bold">Quasar Foundation</h1>
+      <p class="max-w-sm">Empowering communities through outreach, one connection at a time...</p>
+      <div class="flex gap-4">
         <a href="#"><img src="" alt=""></a>
         <a href="#"><img src="" alt=""></a>
       </div>
     </div>
-    <div class="quick-links">
-      <h2>Quick Links</h2>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Contact</a>
+    <div>
+      <h2 class="text-xl mb-2">Quick Links</h2>
+      <ul class="flex flex-col gap-2">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
     </div>
-    <div class="contact">
-      <h2>Contact Us</h2>
-      <p><i></i>info@quasar.org</p>
-      <p><i></i>08108957652</p>
-      <p><i></i> Lagos state, Nigeria</p>
+    <div>
+      <h2 class="text-xl mb-2">Contact Us</h2>
+      <p>info@quasar.org</p>
+      <p>08108957652</p>
+      <p>Lagos State, Nigeria</p>
     </div>
   </footer>
-  <div class="copryright">
+  <div class="text-center bg-black text-white py-4">
     <p>© 2025 Quasar Outreach Program. All rights reserved.</p>
-    <p>courtesy:Quasar Tech Hub</p>
+    <p>Courtesy: Quasar Tech Hub</p>
   </div>
-
 </body>
 </html>
